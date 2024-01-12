@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="title">HTML Forms</h1>
+    <h1>Don't have more thna one h1 on a page</h1>
+    <h2>ID'S must be <em>unique!</em></h2>
+    <form>
+        <div>
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name" />
+        </div>
+        <div>
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name" />
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" step="2" />
+        </div>
+        <div>
+            <label for="date-of-hire">Date of Hire:</label>
+            <input type="date" name="date-of-hire" id="date-of-hire" />
+        </div>
+        <div>
+            <fieldset>
+                <legend>Favorite Sparkling Water:</legend>
+                <input type="radio" name="Sparkling-water" id="bubly">
+                <label for="bubly">Bubly</label>
+                <input type="radio" name="Sparkling-water" id="waterloo">
+                <label for="waterloo">waterloo</label>
+                <input type="radio" name="Sparkling-water" id="la-croix">
+                <label for="la-croix">la croix</label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="colors">Favorite Color:</label>
+            <select name="colors" id="colors">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        <div>
+            <label for="comments">Commetns:</label>
+            <br />
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <button type="reset">Clear</button>
+        <button type="submit">Send Form</button>
+    </form> 
+</body>
+</html>
